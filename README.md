@@ -14,8 +14,8 @@ If you want to add language to the launcher:
 
 4.Add this code in the switch:
 
-case "Your language":
-                    Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("your language shortcuts np.fr-FR");
+ case "yourlanguage":
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("youtlanguage");
                     metroSetSetTabPage3.Text = Properties.strings.servertab;
                     metroSetSetTabPage4.Text = Properties.strings.settingstab;
                     metroSetSetTabPage5.Text = Properties.strings.consoletab;
@@ -24,7 +24,9 @@ case "Your language":
                     metroSetLabel3.Text = Properties.strings.languagetext;
                     metroSetLabel1.Text = Properties.strings.consoletext;
                     metroSetLabel2.Text = Properties.strings.linkstext;
-      break;
+                    pathlb.Text = Properties.strings.pathlb;
+                    savebtn.Text = Properties.strings.savebtn;
+                    break;
 
 5.create file in the properties folder strings.your language shortcuts.resx
 
