@@ -7,8 +7,11 @@ https://github.com/Damien2417/SubnauticaBZMultiplayerMod
 If you want to add language to the launcher:
 
 1.First fork this repository
+
 2.Open in Visual Studio
+
 3.Add option in ComboBox
+
 4.Add this code in the switch:
 
 case "Your language":
@@ -24,6 +27,8 @@ case "Your language":
       break;
 
 5.create file in the properties folder strings.your language shortcuts.resx
+
 6.create the same names for the elements from the form1.cs and add your language words on the right
+
 7.Create a pull request to this repository
 
