@@ -132,6 +132,12 @@
   <data name="linkstext" xml:space="preserve">
     <value>Links:</value>
   </data>
+  <data name="pathlb" xml:space="preserve">
+    <value>Game path:</value>
+  </data>
+  <data name="savebtn" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
   <data name="servertab" xml:space="preserve">
     <value>Server</value>
   </data>

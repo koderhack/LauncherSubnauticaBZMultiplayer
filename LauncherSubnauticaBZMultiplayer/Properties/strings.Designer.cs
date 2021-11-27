@@ -106,6 +106,24 @@ namespace LauncherSubnauticaBZMultiplayer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Game path:.
+        /// </summary>
+        internal static string pathlb {
+            get {
+                return ResourceManager.GetString("pathlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save settings.
+        /// </summary>
+        internal static string savebtn {
+            get {
+                return ResourceManager.GetString("savebtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Server.
         /// </summary>
         internal static string servertab {

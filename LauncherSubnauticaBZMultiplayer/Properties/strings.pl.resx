@@ -132,6 +132,12 @@
   <data name="linkstext" xml:space="preserve">
     <value>Linki:</value>
   </data>
+  <data name="pathlb" xml:space="preserve">
+    <value>Ścieżka gry:</value>
+  </data>
+  <data name="savebtn" xml:space="preserve">
+    <value>Zapisz ustawienia</value>
+  </data>
   <data name="servertab" xml:space="preserve">
     <value>Serwer</value>
   </data>

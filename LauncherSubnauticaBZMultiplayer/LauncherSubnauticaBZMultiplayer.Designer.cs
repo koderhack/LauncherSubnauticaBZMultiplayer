@@ -1,7 +1,7 @@
 ﻿
 namespace LauncherSubnauticaBZMultiplayer
 {
-    partial class launcher
+    partial class Form1
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,7 +29,7 @@ namespace LauncherSubnauticaBZMultiplayer
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(launcher));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.styleManager1 = new MetroSet_UI.Components.StyleManager();
             this.metroSetTabControl1 = new MetroSet_UI.Controls.MetroSetTabControl();
@@ -37,20 +37,15 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetButton1 = new MetroSet_UI.Controls.MetroSetButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroSetSetTabPage4 = new MetroSet_UI.Child.MetroSetSetTabPage();
-            this.savebtn = new MetroSet_UI.Controls.MetroSetButton();
-            this.pathlb = new MetroSet_UI.Controls.MetroSetLabel();
-            this.iplb = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetComboBox1 = new MetroSet_UI.Controls.MetroSetComboBox();
             this.metroSetLabel3 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.pathtb = new MetroSet_UI.Controls.MetroSetTextBox();
-            this.iptb = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.metroSetTextBox3 = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.metroSetTextBox2 = new MetroSet_UI.Controls.MetroSetTextBox();
             this.metroSetSetTabPage5 = new MetroSet_UI.Child.MetroSetSetTabPage();
             this.metroSetLabel1 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetTextBox1 = new MetroSet_UI.Controls.MetroSetTextBox();
             this.metroSetSetTabPage7 = new MetroSet_UI.Child.MetroSetSetTabPage();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.lblGitlink = new System.Windows.Forms.LinkLabel();
             this.metroSetLabel2 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetTabControl1.SuspendLayout();
             this.metroSetSetTabPage3.SuspendLayout();
@@ -110,7 +105,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetTabControl1.ItemSize = new System.Drawing.Size(100, 38);
             this.metroSetTabControl1.Location = new System.Drawing.Point(12, 70);
             this.metroSetTabControl1.Name = "metroSetTabControl1";
-            this.metroSetTabControl1.SelectedIndex = 1;
+            this.metroSetTabControl1.SelectedIndex = 0;
             this.metroSetTabControl1.SelectedTextColor = System.Drawing.Color.White;
             this.metroSetTabControl1.Size = new System.Drawing.Size(758, 439);
             this.metroSetTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -184,20 +179,17 @@ namespace LauncherSubnauticaBZMultiplayer
             // metroSetSetTabPage4
             // 
             this.metroSetSetTabPage4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroSetSetTabPage4.Controls.Add(this.savebtn);
-            this.metroSetSetTabPage4.Controls.Add(this.pathlb);
-            this.metroSetSetTabPage4.Controls.Add(this.iplb);
             this.metroSetSetTabPage4.Controls.Add(this.metroSetComboBox1);
             this.metroSetSetTabPage4.Controls.Add(this.metroSetLabel3);
-            this.metroSetSetTabPage4.Controls.Add(this.pathtb);
-            this.metroSetSetTabPage4.Controls.Add(this.iptb);
+            this.metroSetSetTabPage4.Controls.Add(this.metroSetTextBox3);
+            this.metroSetSetTabPage4.Controls.Add(this.metroSetTextBox2);
             this.metroSetSetTabPage4.Font = null;
             this.metroSetSetTabPage4.ImageIndex = 0;
             this.metroSetSetTabPage4.ImageKey = null;
             this.metroSetSetTabPage4.IsDerivedStyle = true;
             this.metroSetSetTabPage4.Location = new System.Drawing.Point(4, 42);
             this.metroSetSetTabPage4.Name = "metroSetSetTabPage4";
-            this.metroSetSetTabPage4.Size = new System.Drawing.Size(750, 393);
+            this.metroSetSetTabPage4.Size = new System.Drawing.Size(750, 346);
             this.metroSetSetTabPage4.Style = MetroSet_UI.Enums.Style.Dark;
             this.metroSetSetTabPage4.StyleManager = this.styleManager1;
             this.metroSetSetTabPage4.TabIndex = 3;
@@ -205,61 +197,6 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetSetTabPage4.ThemeAuthor = "Narwin";
             this.metroSetSetTabPage4.ThemeName = "MetroDark";
             this.metroSetSetTabPage4.ToolTipText = null;
-            // 
-            // savebtn
-            // 
-            this.savebtn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.DisabledForeColor = System.Drawing.Color.Gray;
-            this.savebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.savebtn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.savebtn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.savebtn.HoverTextColor = System.Drawing.Color.White;
-            this.savebtn.IsDerivedStyle = true;
-            this.savebtn.Location = new System.Drawing.Point(522, 139);
-            this.savebtn.Name = "savebtn";
-            this.savebtn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.NormalTextColor = System.Drawing.Color.White;
-            this.savebtn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.savebtn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.savebtn.PressTextColor = System.Drawing.Color.White;
-            this.savebtn.Size = new System.Drawing.Size(144, 47);
-            this.savebtn.Style = MetroSet_UI.Enums.Style.Light;
-            this.savebtn.StyleManager = null;
-            this.savebtn.TabIndex = 8;
-            this.savebtn.Text = "Save settings";
-            this.savebtn.ThemeAuthor = "Narwin";
-            this.savebtn.ThemeName = "MetroLite";
-            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
-            // 
-            // pathlb
-            // 
-            this.pathlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pathlb.IsDerivedStyle = true;
-            this.pathlb.Location = new System.Drawing.Point(-4, 82);
-            this.pathlb.Name = "pathlb";
-            this.pathlb.Size = new System.Drawing.Size(167, 39);
-            this.pathlb.Style = MetroSet_UI.Enums.Style.Dark;
-            this.pathlb.StyleManager = this.styleManager1;
-            this.pathlb.TabIndex = 7;
-            this.pathlb.Text = "Game path:";
-            this.pathlb.ThemeAuthor = "Narwin";
-            this.pathlb.ThemeName = "MetroDark";
-            // 
-            // iplb
-            // 
-            this.iplb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iplb.IsDerivedStyle = true;
-            this.iplb.Location = new System.Drawing.Point(0, 20);
-            this.iplb.Name = "iplb";
-            this.iplb.Size = new System.Drawing.Size(50, 39);
-            this.iplb.Style = MetroSet_UI.Enums.Style.Dark;
-            this.iplb.StyleManager = this.styleManager1;
-            this.iplb.TabIndex = 6;
-            this.iplb.Text = "Ip:";
-            this.iplb.ThemeAuthor = "Narwin";
-            this.iplb.ThemeName = "MetroDark";
             // 
             // metroSetComboBox1
             // 
@@ -281,7 +218,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetComboBox1.Items.AddRange(new object[] {
             "English",
             "Polish"});
-            this.metroSetComboBox1.Location = new System.Drawing.Point(178, 243);
+            this.metroSetComboBox1.Location = new System.Drawing.Point(200, 158);
             this.metroSetComboBox1.Name = "metroSetComboBox1";
             this.metroSetComboBox1.SelectedItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetComboBox1.SelectedItemForeColor = System.Drawing.Color.White;
@@ -297,7 +234,7 @@ namespace LauncherSubnauticaBZMultiplayer
             // 
             this.metroSetLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.metroSetLabel3.IsDerivedStyle = true;
-            this.metroSetLabel3.Location = new System.Drawing.Point(-4, 233);
+            this.metroSetLabel3.Location = new System.Drawing.Point(17, 149);
             this.metroSetLabel3.Name = "metroSetLabel3";
             this.metroSetLabel3.Size = new System.Drawing.Size(186, 51);
             this.metroSetLabel3.Style = MetroSet_UI.Enums.Style.Dark;
@@ -308,64 +245,66 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetLabel3.ThemeName = "MetroDark";
             this.metroSetLabel3.Click += new System.EventHandler(this.metroSetLabel3_Click);
             // 
-            // pathtb
+            // metroSetTextBox3
             // 
-            this.pathtb.AutoCompleteCustomSource = null;
-            this.pathtb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.pathtb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.pathtb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.pathtb.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pathtb.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.pathtb.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.pathtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.pathtb.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.pathtb.Image = null;
-            this.pathtb.IsDerivedStyle = true;
-            this.pathtb.Lines = null;
-            this.pathtb.Location = new System.Drawing.Point(169, 82);
-            this.pathtb.MaxLength = 32767;
-            this.pathtb.Multiline = false;
-            this.pathtb.Name = "pathtb";
-            this.pathtb.ReadOnly = false;
-            this.pathtb.Size = new System.Drawing.Size(414, 30);
-            this.pathtb.Style = MetroSet_UI.Enums.Style.Dark;
-            this.pathtb.StyleManager = this.styleManager1;
-            this.pathtb.TabIndex = 1;
-            this.pathtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.pathtb.ThemeAuthor = "Narwin";
-            this.pathtb.ThemeName = "MetroDark";
-            this.pathtb.UseSystemPasswordChar = false;
-            this.pathtb.WatermarkText = "";
+            this.metroSetTextBox3.AutoCompleteCustomSource = null;
+            this.metroSetTextBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.metroSetTextBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.metroSetTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.metroSetTextBox3.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.metroSetTextBox3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroSetTextBox3.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroSetTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetTextBox3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSetTextBox3.Image = null;
+            this.metroSetTextBox3.IsDerivedStyle = true;
+            this.metroSetTextBox3.Lines = null;
+            this.metroSetTextBox3.Location = new System.Drawing.Point(17, 93);
+            this.metroSetTextBox3.MaxLength = 32767;
+            this.metroSetTextBox3.Multiline = false;
+            this.metroSetTextBox3.Name = "metroSetTextBox3";
+            this.metroSetTextBox3.ReadOnly = false;
+            this.metroSetTextBox3.Size = new System.Drawing.Size(135, 30);
+            this.metroSetTextBox3.Style = MetroSet_UI.Enums.Style.Dark;
+            this.metroSetTextBox3.StyleManager = this.styleManager1;
+            this.metroSetTextBox3.TabIndex = 1;
+            this.metroSetTextBox3.Text = "metroSetTextBox3";
+            this.metroSetTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.metroSetTextBox3.ThemeAuthor = "Narwin";
+            this.metroSetTextBox3.ThemeName = "MetroDark";
+            this.metroSetTextBox3.UseSystemPasswordChar = false;
+            this.metroSetTextBox3.WatermarkText = "";
             // 
-            // iptb
+            // metroSetTextBox2
             // 
-            this.iptb.AutoCompleteCustomSource = null;
-            this.iptb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.iptb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.iptb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.iptb.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.iptb.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.iptb.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.iptb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.iptb.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.iptb.Image = null;
-            this.iptb.IsDerivedStyle = true;
-            this.iptb.Lines = null;
-            this.iptb.Location = new System.Drawing.Point(56, 29);
-            this.iptb.MaxLength = 32767;
-            this.iptb.Multiline = false;
-            this.iptb.Name = "iptb";
-            this.iptb.ReadOnly = false;
-            this.iptb.Size = new System.Drawing.Size(206, 30);
-            this.iptb.Style = MetroSet_UI.Enums.Style.Dark;
-            this.iptb.StyleManager = this.styleManager1;
-            this.iptb.TabIndex = 0;
-            this.iptb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.iptb.ThemeAuthor = "Narwin";
-            this.iptb.ThemeName = "MetroDark";
-            this.iptb.UseSystemPasswordChar = false;
-            this.iptb.WatermarkText = "";
-            this.iptb.Click += new System.EventHandler(this.metroSetTextBox2_Click);
+            this.metroSetTextBox2.AutoCompleteCustomSource = null;
+            this.metroSetTextBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.metroSetTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.metroSetTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.metroSetTextBox2.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.metroSetTextBox2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroSetTextBox2.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroSetTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetTextBox2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSetTextBox2.Image = null;
+            this.metroSetTextBox2.IsDerivedStyle = true;
+            this.metroSetTextBox2.Lines = null;
+            this.metroSetTextBox2.Location = new System.Drawing.Point(17, 29);
+            this.metroSetTextBox2.MaxLength = 32767;
+            this.metroSetTextBox2.Multiline = false;
+            this.metroSetTextBox2.Name = "metroSetTextBox2";
+            this.metroSetTextBox2.ReadOnly = false;
+            this.metroSetTextBox2.Size = new System.Drawing.Size(135, 30);
+            this.metroSetTextBox2.Style = MetroSet_UI.Enums.Style.Dark;
+            this.metroSetTextBox2.StyleManager = this.styleManager1;
+            this.metroSetTextBox2.TabIndex = 0;
+            this.metroSetTextBox2.Text = "metroSetTextBox2";
+            this.metroSetTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.metroSetTextBox2.ThemeAuthor = "Narwin";
+            this.metroSetTextBox2.ThemeName = "MetroDark";
+            this.metroSetTextBox2.UseSystemPasswordChar = false;
+            this.metroSetTextBox2.WatermarkText = "";
+            this.metroSetTextBox2.Click += new System.EventHandler(this.metroSetTextBox2_Click);
             // 
             // metroSetSetTabPage5
             // 
@@ -378,7 +317,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetSetTabPage5.IsDerivedStyle = true;
             this.metroSetSetTabPage5.Location = new System.Drawing.Point(4, 42);
             this.metroSetSetTabPage5.Name = "metroSetSetTabPage5";
-            this.metroSetSetTabPage5.Size = new System.Drawing.Size(750, 393);
+            this.metroSetSetTabPage5.Size = new System.Drawing.Size(750, 570);
             this.metroSetSetTabPage5.Style = MetroSet_UI.Enums.Style.Dark;
             this.metroSetSetTabPage5.StyleManager = this.styleManager1;
             this.metroSetSetTabPage5.TabIndex = 4;
@@ -435,9 +374,7 @@ namespace LauncherSubnauticaBZMultiplayer
             // metroSetSetTabPage7
             // 
             this.metroSetSetTabPage7.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroSetSetTabPage7.Controls.Add(this.linkLabel2);
             this.metroSetSetTabPage7.Controls.Add(this.linkLabel1);
-            this.metroSetSetTabPage7.Controls.Add(this.lblGitlink);
             this.metroSetSetTabPage7.Controls.Add(this.metroSetLabel2);
             this.metroSetSetTabPage7.Font = null;
             this.metroSetSetTabPage7.ImageIndex = 0;
@@ -445,7 +382,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetSetTabPage7.IsDerivedStyle = true;
             this.metroSetSetTabPage7.Location = new System.Drawing.Point(4, 42);
             this.metroSetSetTabPage7.Name = "metroSetSetTabPage7";
-            this.metroSetSetTabPage7.Size = new System.Drawing.Size(750, 393);
+            this.metroSetSetTabPage7.Size = new System.Drawing.Size(750, 570);
             this.metroSetSetTabPage7.Style = MetroSet_UI.Enums.Style.Dark;
             this.metroSetSetTabPage7.StyleManager = this.styleManager1;
             this.metroSetSetTabPage7.TabIndex = 5;
@@ -454,21 +391,6 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetSetTabPage7.ThemeName = "MetroDark";
             this.metroSetSetTabPage7.ToolTipText = null;
             // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.linkLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.LinkColor = System.Drawing.Color.Cyan;
-            this.linkLabel2.Location = new System.Drawing.Point(1, 196);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(109, 31);
-            this.linkLabel2.TabIndex = 3;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Patreon";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -476,28 +398,13 @@ namespace LauncherSubnauticaBZMultiplayer
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.linkLabel1.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkColor = System.Drawing.Color.Cyan;
-            this.linkLabel1.Location = new System.Drawing.Point(3, 140);
+            this.linkLabel1.Location = new System.Drawing.Point(3, 85);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(107, 31);
-            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.Size = new System.Drawing.Size(94, 31);
+            this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Discord";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
-            // 
-            // lblGitlink
-            // 
-            this.lblGitlink.AutoSize = true;
-            this.lblGitlink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lblGitlink.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblGitlink.ForeColor = System.Drawing.Color.Transparent;
-            this.lblGitlink.LinkColor = System.Drawing.Color.Cyan;
-            this.lblGitlink.Location = new System.Drawing.Point(3, 85);
-            this.lblGitlink.Name = "lblGitlink";
-            this.lblGitlink.Size = new System.Drawing.Size(94, 31);
-            this.lblGitlink.TabIndex = 1;
-            this.lblGitlink.TabStop = true;
-            this.lblGitlink.Text = "Github";
-            this.lblGitlink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabel1.Text = "Github";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // metroSetLabel2
             // 
@@ -513,7 +420,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetLabel2.ThemeAuthor = "Narwin";
             this.metroSetLabel2.ThemeName = "MetroDark";
             // 
-            // launcher
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -521,7 +428,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.ClientSize = new System.Drawing.Size(793, 521);
             this.Controls.Add(this.metroSetTabControl1);
             this.Controls.Add(this.metroSetControlBox1);
-            this.Name = "launcher";
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Style = MetroSet_UI.Enums.Style.Dark;
             this.StyleManager = this.styleManager1;
@@ -550,20 +457,15 @@ namespace LauncherSubnauticaBZMultiplayer
         private MetroSet_UI.Child.MetroSetSetTabPage metroSetSetTabPage5;
         private MetroSet_UI.Controls.MetroSetButton metroSetButton1;
         private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox1;
-        private MetroSet_UI.Controls.MetroSetTextBox pathtb;
-        private MetroSet_UI.Controls.MetroSetTextBox iptb;
+        private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox3;
+        private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel1;
         private MetroSet_UI.Child.MetroSetSetTabPage metroSetSetTabPage7;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel2;
-        private System.Windows.Forms.LinkLabel lblGitlink;
+        private System.Windows.Forms.LinkLabel linkLabel1;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel3;
         private MetroSet_UI.Controls.MetroSetComboBox metroSetComboBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private MetroSet_UI.Controls.MetroSetLabel iplb;
-        private MetroSet_UI.Controls.MetroSetLabel pathlb;
-        private MetroSet_UI.Controls.MetroSetButton savebtn;
     }
 }
 

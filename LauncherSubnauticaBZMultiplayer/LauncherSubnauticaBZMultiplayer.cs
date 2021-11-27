@@ -13,10 +13,10 @@ using System.Diagnostics;
 using System.Globalization;
 namespace LauncherSubnauticaBZMultiplayer
 {
-    public partial class launcher : MetroSetForm
+    public partial class Form1 : MetroSetForm
     {
         Thread start;
-        public launcher()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -107,14 +107,13 @@ namespace LauncherSubnauticaBZMultiplayer
         {
 
         }
-       
+
         private void metroSetComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string text = metroSetComboBox1.Text;
             switch (text)
             {
                 case "English":
-                   
                     metroSetSetTabPage3.Text = Properties.strings.servertab;
                     metroSetSetTabPage4.Text = Properties.strings.settingstab;
                     metroSetSetTabPage5.Text = Properties.strings.consoletab;
@@ -123,8 +122,6 @@ namespace LauncherSubnauticaBZMultiplayer
                     metroSetLabel3.Text = Properties.strings.languagetext;
                     metroSetLabel1.Text = Properties.strings.consoletext;
                     metroSetLabel2.Text = Properties.strings.linkstext;
-                    pathlb.Text = Properties.strings.pathlb;
-                    savebtn.Text = Properties.strings.savebtn;
 
                     break;
                 case "Polish":
@@ -137,28 +134,10 @@ namespace LauncherSubnauticaBZMultiplayer
                     metroSetLabel3.Text = Properties.strings.languagetext;
                     metroSetLabel1.Text = Properties.strings.consoletext;
                     metroSetLabel2.Text = Properties.strings.linkstext;
-                    pathlb.Text = Properties.strings.pathlb;
-                    savebtn.Text = Properties.strings.savebtn;
                     break;
                 default:
                     break;
             }
-        }
-
-        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://discord.gg/Nr6nBdCUg2");
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.patreon.com/subnauticabz");
-        }
-
-        private void savebtn_Click(object sender, EventArgs e)
-        {
-            string ip = iptb.Text;
-            string path = pathtb.Text;
         }
     }
 }
