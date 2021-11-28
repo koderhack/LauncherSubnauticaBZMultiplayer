@@ -176,7 +176,7 @@ namespace LauncherSubnauticaBZMultiplayer
             }
             else
             {
-                MessageBox.Show("Could not find game path | Nie możemy znaleść ścieżki gry","Error | Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error) ;
+                MessageBox.Show("Could not find game path | Nie możemy znaleźć ścieżki gry","Error | Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error) ;
             }
 
 
