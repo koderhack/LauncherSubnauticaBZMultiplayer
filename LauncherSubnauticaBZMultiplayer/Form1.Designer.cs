@@ -34,10 +34,10 @@ namespace LauncherSubnauticaBZMultiplayer
             this.styleManager1 = new MetroSet_UI.Components.StyleManager();
             this.metroSetTabControl1 = new MetroSet_UI.Controls.MetroSetTabControl();
             this.metroSetSetTabPage3 = new MetroSet_UI.Child.MetroSetSetTabPage();
+            this.gamestart = new MetroSet_UI.Controls.MetroSetButton();
             this.metroSetButton1 = new MetroSet_UI.Controls.MetroSetButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroSetSetTabPage4 = new MetroSet_UI.Child.MetroSetSetTabPage();
-            this.savebtn = new MetroSet_UI.Controls.MetroSetButton();
             this.pathlb = new MetroSet_UI.Controls.MetroSetLabel();
             this.iplb = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetComboBox1 = new MetroSet_UI.Controls.MetroSetComboBox();
@@ -127,6 +127,7 @@ namespace LauncherSubnauticaBZMultiplayer
             // metroSetSetTabPage3
             // 
             this.metroSetSetTabPage3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.metroSetSetTabPage3.Controls.Add(this.gamestart);
             this.metroSetSetTabPage3.Controls.Add(this.metroSetButton1);
             this.metroSetSetTabPage3.Controls.Add(this.pictureBox1);
             this.metroSetSetTabPage3.Font = null;
@@ -145,6 +146,33 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetSetTabPage3.ToolTipText = null;
             this.metroSetSetTabPage3.Click += new System.EventHandler(this.metroSetSetTabPage3_Click);
             // 
+            // gamestart
+            // 
+            this.gamestart.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.gamestart.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.gamestart.DisabledForeColor = System.Drawing.Color.Gray;
+            this.gamestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.gamestart.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.gamestart.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.gamestart.HoverTextColor = System.Drawing.Color.White;
+            this.gamestart.IsDerivedStyle = true;
+            this.gamestart.Location = new System.Drawing.Point(387, 316);
+            this.gamestart.Name = "gamestart";
+            this.gamestart.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.gamestart.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.gamestart.NormalTextColor = System.Drawing.Color.White;
+            this.gamestart.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.gamestart.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.gamestart.PressTextColor = System.Drawing.Color.White;
+            this.gamestart.Size = new System.Drawing.Size(139, 48);
+            this.gamestart.Style = MetroSet_UI.Enums.Style.Dark;
+            this.gamestart.StyleManager = this.styleManager1;
+            this.gamestart.TabIndex = 2;
+            this.gamestart.Text = "Start Game";
+            this.gamestart.ThemeAuthor = "Narwin";
+            this.gamestart.ThemeName = "MetroDark";
+            this.gamestart.Click += new System.EventHandler(this.gamestart_Click);
+            // 
             // metroSetButton1
             // 
             this.metroSetButton1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -155,7 +183,7 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.metroSetButton1.HoverTextColor = System.Drawing.Color.White;
             this.metroSetButton1.IsDerivedStyle = true;
-            this.metroSetButton1.Location = new System.Drawing.Point(320, 319);
+            this.metroSetButton1.Location = new System.Drawing.Point(213, 316);
             this.metroSetButton1.Name = "metroSetButton1";
             this.metroSetButton1.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -184,7 +212,6 @@ namespace LauncherSubnauticaBZMultiplayer
             // metroSetSetTabPage4
             // 
             this.metroSetSetTabPage4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroSetSetTabPage4.Controls.Add(this.savebtn);
             this.metroSetSetTabPage4.Controls.Add(this.pathlb);
             this.metroSetSetTabPage4.Controls.Add(this.iplb);
             this.metroSetSetTabPage4.Controls.Add(this.metroSetComboBox1);
@@ -205,33 +232,6 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetSetTabPage4.ThemeAuthor = "Narwin";
             this.metroSetSetTabPage4.ThemeName = "MetroDark";
             this.metroSetSetTabPage4.ToolTipText = null;
-            // 
-            // savebtn
-            // 
-            this.savebtn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.DisabledForeColor = System.Drawing.Color.Gray;
-            this.savebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.savebtn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.savebtn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.savebtn.HoverTextColor = System.Drawing.Color.White;
-            this.savebtn.IsDerivedStyle = true;
-            this.savebtn.Location = new System.Drawing.Point(522, 139);
-            this.savebtn.Name = "savebtn";
-            this.savebtn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.savebtn.NormalTextColor = System.Drawing.Color.White;
-            this.savebtn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.savebtn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.savebtn.PressTextColor = System.Drawing.Color.White;
-            this.savebtn.Size = new System.Drawing.Size(144, 47);
-            this.savebtn.Style = MetroSet_UI.Enums.Style.Light;
-            this.savebtn.StyleManager = null;
-            this.savebtn.TabIndex = 8;
-            this.savebtn.Text = "Save settings";
-            this.savebtn.ThemeAuthor = "Narwin";
-            this.savebtn.ThemeName = "MetroLite";
-            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
             // 
             // pathlb
             // 
@@ -563,7 +563,7 @@ namespace LauncherSubnauticaBZMultiplayer
         private System.Windows.Forms.LinkLabel linkLabel2;
         private MetroSet_UI.Controls.MetroSetLabel iplb;
         private MetroSet_UI.Controls.MetroSetLabel pathlb;
-        private MetroSet_UI.Controls.MetroSetButton savebtn;
+        private MetroSet_UI.Controls.MetroSetButton gamestart;
     }
 }
 

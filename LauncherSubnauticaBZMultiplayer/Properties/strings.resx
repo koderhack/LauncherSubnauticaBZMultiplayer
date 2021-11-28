@@ -126,6 +126,9 @@
   <data name="creditstab" xml:space="preserve">
     <value>Credits</value>
   </data>
+  <data name="gamestartbtn" xml:space="preserve">
+    <value>Start Game</value>
+  </data>
   <data name="languagetext" xml:space="preserve">
     <value>Language:</value>
   </data>
@@ -134,9 +137,6 @@
   </data>
   <data name="pathlb" xml:space="preserve">
     <value>Game path:</value>
-  </data>
-  <data name="savebtn" xml:space="preserve">
-    <value>Save settings</value>
   </data>
   <data name="servertab" xml:space="preserve">
     <value>Server</value>

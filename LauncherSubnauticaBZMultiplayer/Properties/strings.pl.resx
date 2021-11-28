@@ -126,6 +126,9 @@
   <data name="creditstab" xml:space="preserve">
     <value>Informacje</value>
   </data>
+  <data name="gamestartbtn" xml:space="preserve">
+    <value>Rozpocznij Grę</value>
+  </data>
   <data name="languagetext" xml:space="preserve">
     <value>Język:</value>
   </data>
@@ -135,16 +138,13 @@
   <data name="pathlb" xml:space="preserve">
     <value>Ścieżka gry:</value>
   </data>
-  <data name="savebtn" xml:space="preserve">
-    <value>Zapisz ustawienia</value>
-  </data>
   <data name="servertab" xml:space="preserve">
     <value>Serwer</value>
   </data>
   <data name="settingstab" xml:space="preserve">
     <value>Ustawienia</value>
   </data>
-  <data name="startserverbtn" xml:space="preserve">
+  <data name="start_serverbtn" xml:space="preserve">
     <value>Uruchom serwer</value>
   </data>
 </root>

@@ -88,6 +88,15 @@ namespace LauncherSubnauticaBZMultiplayer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Start Game.
+        /// </summary>
+        internal static string gamestartbtn {
+            get {
+                return ResourceManager.GetString("gamestartbtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language:.
         /// </summary>
         internal static string languagetext {
@@ -111,15 +120,6 @@ namespace LauncherSubnauticaBZMultiplayer.Properties {
         internal static string pathlb {
             get {
                 return ResourceManager.GetString("pathlb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Save settings.
-        /// </summary>
-        internal static string savebtn {
-            get {
-                return ResourceManager.GetString("savebtn", resourceCulture);
             }
         }
         

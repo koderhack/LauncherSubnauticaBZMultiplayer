@@ -26,6 +26,8 @@ namespace LauncherSubnauticaBZMultiplayer
             this.metroSetTabControl1.SelectedTab = this.metroSetSetTabPage3;
             Console.SetOut(new TextBoxWriter(metroSetTextBox1));
             start = new Thread(StartServer.Start);
+            string ip = iptb.Text;
+            string path = pathtb.Text;
         }
 
         private void metroSetButton1_Click(object sender, EventArgs e)
@@ -124,8 +126,9 @@ namespace LauncherSubnauticaBZMultiplayer
                     metroSetLabel1.Text = Properties.strings.consoletext;
                     metroSetLabel2.Text = Properties.strings.linkstext;
                     pathlb.Text = Properties.strings.pathlb;
-                    savebtn.Text = Properties.strings.savebtn;
-
+                   
+                    gamestart.Text = Properties.strings.gamestartbtn;
+                    
                     break;
                 case "Polish":
                     Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("pl-PL");
@@ -138,7 +141,9 @@ namespace LauncherSubnauticaBZMultiplayer
                     metroSetLabel1.Text = Properties.strings.consoletext;
                     metroSetLabel2.Text = Properties.strings.linkstext;
                     pathlb.Text = Properties.strings.pathlb;
-                    savebtn.Text = Properties.strings.savebtn;
+                    
+                    gamestart.Text = Properties.strings.gamestartbtn;
+                   
                     break;
                 default:
                     break;
@@ -157,8 +162,26 @@ namespace LauncherSubnauticaBZMultiplayer
 
         private void savebtn_Click(object sender, EventArgs e)
         {
-            string ip = iptb.Text;
+           
+            
+            
+        }
+
+        private void gamestart_Click(object sender, EventArgs e)
+        {
             string path = pathtb.Text;
+            if (System.IO.Directory.Exists(path))
+            {
+                Process.Start(pathtb.Text);
+            }
+            else
+            {
+                MessageBox.Show("Could not find game path | Nie możemy znaleść ścieżki gry","Error | Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error) ;
+            }
+
+
+           
+        
         }
     }
 }
