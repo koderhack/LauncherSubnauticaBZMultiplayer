@@ -170,14 +170,14 @@ namespace LauncherSubnauticaBZMultiplayer
         private void gamestart_Click(object sender, EventArgs e)
         {
             string path = pathtb.Text;
-            if (System.IO.Directory.Exists(path))
-            {
-                Process.Start(pathtb.Text);
-            }
-            else
-            {
-                MessageBox.Show("Could not find game path | Nie możemy znaleźć ścieżki gry","Error | Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error) ;
-            }
+            //if (System.IO.Directory.Exists(path))
+            //{
+                Process.Start(path);
+           // }
+            //else
+            //{
+                //MessageBox.Show("Could not find game path | Nie możemy znaleźć ścieżki gry","Error | Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error) ;
+            //}
 
 
            
